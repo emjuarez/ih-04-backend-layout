@@ -1,0 +1,12 @@
+{{!-- ./views/beers.hbs --}}
+
+<h1>Listado de cervezas</h1>
+
+<div>
+	{{#each data }}
+	<h1>{{name}}</h1>
+	<img class="beer-img" src={{ image_url }} />
+	<p>{{ description }}</p>
+	<p>{{ brewers_tips }}</p>
+	{{/each}}
+</div>
